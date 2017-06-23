@@ -24,7 +24,7 @@ public class BillsController {
             return  bill.toString();
         }
         catch (Exception ex) {
-            return "Bill not found";
+            return "Bill not found for "+ bid;
         }
 
         
