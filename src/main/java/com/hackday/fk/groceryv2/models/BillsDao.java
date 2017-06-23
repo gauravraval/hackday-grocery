@@ -3,6 +3,7 @@ package com.hackday.fk.groceryv2.models;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 /**
  * A DAO for the entity User is simply created by extending the CrudRepository
@@ -21,6 +22,19 @@ public interface BillsDao extends CrudRepository<Bills, Long> {
    * 
    * @param bid the user email.
    */
+  Bills findById(long id);
+
+  void saveBill(Bills bill);
+
+  void updateBill(Bills bill);
+
+  // void deleteBillById(String orderId);
+
+  List<Bills> findALl();
+
+  void deleteAllBill();
+
+  public boolean isBillExist(Bills bill);
   public Bills findByBid(Long bid);
 
 } // class UserDao
