@@ -1,13 +1,16 @@
 package com.hackday.fk.groceryv2.models;
 
+import org.springframework.data.annotation.Id;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 
 /**
  * Created by gaurav.raval on 23/06/17.
  */
-@Entity
-@Table(name = "bills")
+
 public class Bills {
         private Long orderid;
         private String ordercontent;
@@ -26,6 +29,10 @@ public class Bills {
             this.restaurantid=restaurantid;
 
         }
+
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
         public Long getOrderid() {
             return orderid;

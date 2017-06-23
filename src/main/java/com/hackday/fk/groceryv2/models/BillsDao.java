@@ -13,14 +13,14 @@ import javax.transaction.Transactional;
  * 
  * @author netgloo
  */
-@Transactional
-public interface BillsDao extends CrudRepository<Bills, Long> {
+
+public interface BillsDao {
 
   /**
    * Return the user having the passed email or null if no user is found.
    * 
    * @param bid the user email.
    */
-  public Bills findByBid(String bid);
+  public Bills findByBid(Long bid);
 
 } // class UserDao

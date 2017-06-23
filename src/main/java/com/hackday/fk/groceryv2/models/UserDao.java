@@ -13,7 +13,6 @@ import org.springframework.data.repository.CrudRepository;
  * 
  * @author netgloo
  */
-@Transactional
 public interface UserDao extends CrudRepository<User, Long> {
 
   /**
