@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * Created by gaurav.raval on 23/06/17.
  */
-
+@Controller
 public class BillsController {
     @Autowired
     private BillsDao billsDao;
@@ -24,7 +24,7 @@ public class BillsController {
             return  bill.toString();
         }
         catch (Exception ex) {
-            return "User not found";
+            return "Bill not found";
         }
 
         

@@ -10,7 +10,8 @@ import javax.persistence.Table;
 /**
  * Created by gaurav.raval on 23/06/17.
  */
-
+@Entity
+@Table(name = "bills")
 public class Bills {
         private Long orderid;
         private String ordercontent;
@@ -32,7 +33,7 @@ public class Bills {
 
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private long bid;
 
         public Long getOrderid() {
             return orderid;
