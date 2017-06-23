@@ -1,8 +1,10 @@
 package com.hackday.fk.groceryv2.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,19 +24,24 @@ public interface BillsDao extends CrudRepository<Bills, Long> {
    * 
    * @param bid the user email.
    */
-  Bills findById(long id);
 
-  void saveBill(Bills bill);
 
-  void updateBill(Bills bill);
+  //public Bills findByBId(long bid);
+
+  //public  List<Bills> findAllByBid();
+
+
+  //void updateBill(Bills bill);
 
   // void deleteBillById(String orderId);
 
-  List<Bills> findALl();
 
-  void deleteAllBill();
 
-  public boolean isBillExist(Bills bill);
-  public Bills findByBid(Long bid);
+  //void deleteAllBill();
+
+  //public boolean isBillExist(Bills bill);
+  //public Bills findByBid(Long bid);
+
 
 } // class UserDao
+
