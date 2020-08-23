@@ -34,3 +34,5 @@ Import as *Existing Maven Project* and run it as *Spring Boot App*.
     * `/delete?id=[id]`: delete the user with the passed id.
     * `/get-by-email?email=[email]`: retrieve the id for the user with the passed email address.
     * `/update?id=[id]&email=[email]&name=[name]`: update the email and the name for the user indentified by the passed id.
+
+==
